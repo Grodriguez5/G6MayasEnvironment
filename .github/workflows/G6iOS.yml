@@ -16,4 +16,4 @@ jobs:
       RELEASEV: '4.1.10'
     steps:
       - name: Set environment variables
-        run: echo "XCODEV=${XCODEV}" >> $GITHUB_ENV
+        run: echo "XCODEV=${env.XCODEV}" >> $GITHUB_ENV
