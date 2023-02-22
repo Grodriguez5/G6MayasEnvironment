@@ -1,8 +1,5 @@
 name: Set Environment Vars
 
-concurrency:
-    group: "PR: ${{ github.head_ref }}"
-    cancel-in-progress: true
 on: 
   push:
     branches: [main]
