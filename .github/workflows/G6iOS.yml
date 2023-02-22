@@ -10,7 +10,7 @@ env:
   
 jobs:
   set-env-vars:
-    runs-on: [monterey]
+    runs-on: [macos-latest]
     env:
       XCODEV: '13.4.1'
       RELEASEV: '4.1.10'
