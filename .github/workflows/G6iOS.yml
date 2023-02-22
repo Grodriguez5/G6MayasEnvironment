@@ -13,4 +13,4 @@ jobs:
     runs-on: [macos-latest]
     steps:
       - name: Set environment variables
-        run: echo "XCODEV=${XCODEV}" >> $GITHUB_ENV
+        run: echo "XCODEV=$XCODEV" >> $GITHUB_ENV
