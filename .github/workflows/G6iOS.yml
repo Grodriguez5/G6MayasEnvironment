@@ -13,8 +13,8 @@ jobs:
   set-env-vars:
     runs-on: [monterey]
     env:
-      XCODEV: "13.4.1"
-      RELEASEV: "4.1.10"
+      XCODEV: '13.4.1'
+      RELEASEV: '4.1.10'
     steps:
       - name: Set environment variables
         run: echo "XCODEV=${XCODEV}" >> $GITHUB_ENV
