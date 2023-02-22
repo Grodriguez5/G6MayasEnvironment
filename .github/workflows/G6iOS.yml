@@ -1,0 +1,20 @@
+name: Set Environment Vars
+
+concurrency:
+    group: "PR: ${{ github.head_ref }}"
+    cancel-in-progress: true
+on: 
+  push:
+    branches: [main]
+env:
+  GITHUB_TOKEN: ${{ secrets.OCTOKIT_TOKEN }}
+  
+jobs:
+  set-env-vars:
+    runs-on: [monterey]
+    env:
+      XCODEV: "13.4.1"
+      RELEASEV: "4.1.10"
+    steps:
+      - name: Set environment variables
+        run: echo "XCODEV=${XCODEV}" >> $GITHUB_ENV
